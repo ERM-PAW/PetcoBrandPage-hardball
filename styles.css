@@ -1,0 +1,278 @@
+
+/* hero banner */
+.citrusStylesSE-container {
+    position: relative;
+}
+
+.citrusStylesSE-heroImage-copy {
+    position: absolute;
+    width: 94%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    margin: auto 5%;
+}
+
+.citrusStylesSE-hero-copy-center {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: calc(var(--citrusStylesSE-spacing-xlarge) - 2px);
+}
+
+.citrusStylesSE-logo img {
+    width: 100%;
+    max-width: 132px;
+}
+
+.citrusStylesSE-heroCopy h1 {
+    font-size: 45px;
+    color: var(--citrusStylesSE-primary-navy);
+    padding-bottom: 0px;
+}
+.citrusStylesSE-heroCopy p{
+    font-size: 20px;
+    color: var(--citrusStylesSE-black);
+    padding-bottom: 30px;
+}
+.citrusStylesSE-hero-rightCTA a {
+    display: block;
+    width: 170px;
+    background: var(--citrusStylesSE-primary-navy);
+    font-family: "PetcoCircular-Black", arial !important;
+    font-size: 16px;
+    line-height: 52px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--citrusStylesSE-white);
+    border: 1px solid var(--citrusStylesSE-primary-navy);
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1400px) {
+    .citrusStylesSE-hero-copy-center {
+        gap: 25px;
+    }
+
+    .citrusStylesSE-heroCopy h1 {
+        font-size: calc(var(--citrusStylesSE-text-font-size-super) + 8px);
+    }
+
+    .citrusStylesSE-logo img {
+        max-width: 120px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .citrusStylesSE-heroCopy h1 {
+        padding-bottom: 10px;
+    }
+        .citrusStylesSE-heroCopy p {
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+}
+
+@media all and (min-width: 922px) and (max-width: 1100px) {
+    .citrusStylesSE-heroImage-copy {
+        top: -3%;
+    }
+
+    .citrusStylesSE-heroCopy h1 {
+        font-size: calc(var(--citrusStylesSE-text-font-size-super) - 4px);
+        padding: 5px;
+    }
+         .citrusStylesSE-heroCopy p {
+             font-size: 16px;
+             padding-bottom: 15px;
+         }
+}
+
+@media screen and (max-width: 950px) {
+    .citrusStylesSE-hero-copy-center {
+        column-gap: calc(var(--citrusStylesSE-spacing-medium) - 1px);
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 921px) {
+    .citrusStylesSE-heroImage-copy {
+        top: 0;
+        align-items: flex-start;
+    }
+
+    .citrusStylesSE-logo img {
+        max-width: 105px;
+    }
+
+    .citrusStylesSE-heroCopy h1 {
+        font-size: 30px;
+        line-height: 30px;
+        padding-bottom: 0px;
+    }
+         .citrusStylesSE-heroCopy p {
+             font-size: 16px;
+             padding-bottom: 10px;
+         }
+}
+
+@media all and (max-width: 767px) {
+    .citrusStylesSE-heroImage-copy {
+        width: 100% !important;
+        margin: 0 auto !important;
+        justify-content: center;
+        align-items: flex-start;
+        height: 50%;
+    }
+    .citrusStylesSE-hero-copy-center {
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .citrusStylesSE-heroCopy h1 {
+        font-size: calc(var(--citrusStylesSE-text-font-size-super) - 2px);
+        text-align: center;
+        padding-bottom: 10px;
+    }
+ .citrusStylesSE-heroCopy p {
+     font-size: 16px;
+     padding-bottom: 15px;
+     text-align: center;
+ }
+    .citrusStylesSE-hero-rightCTA {
+        display: flex;
+        justify-content: center;
+    }
+
+    .citrusStylesSE-hero-rightCTA a {
+        width: max-content;
+        background: none;
+        line-height: 20px;
+        text-align: left;
+        color: var(--citrusStylesSE-primary-navy);
+        border: none;
+        text-decoration: underline;
+        text-transform: none;
+    }
+}
+
+@media all and (min-width: 476px) and (max-width: 767px) {
+    .citrusStylesSE-heroCopy h1 {
+        font-size: calc(var(--citrusStylesSE-text-font-size-super) + 4px);
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .citrusStylesSE-heroImage-copy {
+        top: 2%;
+    }
+
+    .citrusStylesSE-heroCopy h1 {
+        font-size: var(--citrusStylesSE-text-font-size-xlarge);
+        padding-bottom: 0px;
+    }
+}
+/* content banner video */
+.citrusStylesSE-video {
+    background: #FFA40015;
+    position: relative;
+    margin: auto;
+    margin-top: 90px;
+    max-width: 1440px;
+}
+
+.citrusStyleSE-iframe {
+    width: 100%;
+    max-width: 550px;
+    height: 350px;
+    margin: auto;
+}
+
+.citrusStyleSE-iframe iframe {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -30px;
+    border-radius: 6px;
+    border: 0;
+}
+
+.citrusStylesSE-grid-text {
+    text-align: center;
+    padding: 0 20px 20px;
+}
+
+@media screen and (max-width:767px) {
+    .citrusStylesSE-video {
+        margin-top: 0px;
+    }
+
+    .citrusStylesSE-order2-sm {
+        order: 2;
+    }
+
+    .citrusStylesSE-order1-sm {
+        order: 1;
+    }
+
+    .citrusStylesSE-grid-text {
+        padding: 0 20px;
+        padding-bottom: 20px;
+    }
+
+    .citrusStyleSE-iframe iframe {
+        top: 0;
+    }
+}
+/* End content banner video */
+
+/* article 3up */
+ .citrusStylesSE-section4up {
+     padding: var(--citrusStylesSE-spacing-super);
+ }
+
+ .citrusStylesSE-section4up .citrusStylesSE-grid__cell img {
+     max-width: 104px;
+ }
+
+ .citrusStylesSE-header4,
+ .citrusStylesSE-para {
+     color: var(--citrusStylesSE-black);
+ }
+
+ .citrusStylesSE-section4up .citrusStylesSE-para {
+     font-size: var(--citrusStylesSE-text-font-size-medium);
+    padding: 0 0 var(--citrusStylesSE-spacing-medium) 0;
+ }
+
+  .citrusStylesSE-section4up .citrusStylesSE-header4 {
+     padding: var(--citrusStylesSE-spacing-medium) 0;
+     font-size: var(--citrusStylesSE-text-font-size-large);
+ }
+.citrusStylesSE-disclaimer.citrusStylesSE-para{
+    padding: var(--citrusStylesSE-spacing-medium) 0;
+}
+ @media screen and (min-width: 48em) {
+    .citrusStylesSE-section4up .citrusStylesSE-btn-primary-navy .citrusStylesSE-url {
+         padding: var(--citrusStylesSE-spacing-large);
+     }
+
+ }
+
+ @media (max-width: 47.93em) {
+     .citrusStylesSE-section4up {
+         padding: 0;
+     }
+.citrusStylesSE-section4up .citrusStylesSE-header4{
+    min-height: 50px;padding-bottom: 0;
+}
+     .citrusStylesSE-section4up .citrusStylesSE-grid__cell {
+         min-width: 70vw;
+     }
+         .citrusStylesSE-disclaimer.citrusStylesSE-para {
+             padding-top: 0;
+         }
+ }
+/* End article 3up */
