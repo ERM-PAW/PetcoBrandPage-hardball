@@ -23,7 +23,7 @@
 
 .citrusStylesSE-logo img {
     width: 100%;
-    max-width: 132px;
+    max-width: 200px;
 }
 
 .citrusStylesSE-heroCopy h1 {
@@ -61,7 +61,7 @@
     }
 
     .citrusStylesSE-logo img {
-        max-width: 120px;
+        max-width: 200px;
     }
 }
 
@@ -69,10 +69,15 @@
     .citrusStylesSE-heroCopy h1 {
         padding-bottom: 10px;
     }
-        .citrusStylesSE-heroCopy p {
-            font-size: 20px;
-            padding-bottom: 20px;
-        }
+    .citrusStylesSE-heroCopy p {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    .citrusStylesSE-hero-copy-center {
+        column-gap: calc(var(--citrusStylesSE-spacing-small));
+        padding-left: 5px;
+    }
 }
 
 @media all and (min-width: 922px) and (max-width: 1100px) {
@@ -92,7 +97,7 @@
 
 @media screen and (max-width: 950px) {
     .citrusStylesSE-hero-copy-center {
-        column-gap: calc(var(--citrusStylesSE-spacing-medium) - 1px);
+        column-gap: calc(var(--citrusStylesSE-spacing-small));
     }
 }
 
@@ -111,10 +116,14 @@
         line-height: 30px;
         padding-bottom: 0px;
     }
-         .citrusStylesSE-heroCopy p {
-             font-size: 16px;
-             padding-bottom: 10px;
-         }
+    .citrusStylesSE-heroCopy p {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+    .citrusStylesSE-video .citrusStyleSE-iframe {
+        height: 280px;
+    }
 }
 
 @media all and (max-width: 767px) {
@@ -125,6 +134,11 @@
         align-items: flex-start;
         height: 50%;
     }
+
+    .citrusStylesSE-logo img {
+        max-width: 120px;
+    }
+
     .citrusStylesSE-hero-copy-center {
         gap: 0;
         flex-direction: column;
@@ -135,11 +149,11 @@
         text-align: center;
         padding-bottom: 10px;
     }
- .citrusStylesSE-heroCopy p {
-     font-size: 16px;
-     padding-bottom: 15px;
-     text-align: center;
- }
+    .citrusStylesSE-heroCopy p {
+        font-size: 16px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
     .citrusStylesSE-hero-rightCTA {
         display: flex;
         justify-content: center;
@@ -186,7 +200,7 @@
 .citrusStyleSE-iframe {
     width: 100%;
     max-width: 550px;
-    height: 350px;
+    height: 330px;
     margin: auto;
 }
 
@@ -218,8 +232,13 @@
     }
 
     .citrusStylesSE-grid-text {
-        padding: 0 20px;
-        padding-bottom: 20px;
+        padding: 20px 20px 40px;
+    }
+
+    .citrusStylesSE-grid-text p {
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 0 0 25px;
     }
 
     .citrusStyleSE-iframe iframe {
@@ -252,7 +271,7 @@
      font-size: var(--citrusStylesSE-text-font-size-large);
  }
 .citrusStylesSE-disclaimer.citrusStylesSE-para{
-    padding: var(--citrusStylesSE-spacing-medium) 0;
+    margin: -35px;
 }
  @media screen and (min-width: 48em) {
     .citrusStylesSE-section4up .citrusStylesSE-btn-primary-navy .citrusStylesSE-url {
