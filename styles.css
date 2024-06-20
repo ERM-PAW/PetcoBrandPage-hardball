@@ -54,6 +54,17 @@ body {
   text-transform: uppercase;
 }
 
+.citrusStylesSE-grid-text h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.citrusStylesSE-grid-text p {
+  padding: 10px 0 20px;
+  margin: 0 auto;
+}
+
+
 @media screen and (max-width: 1400px) {
   .citrusStylesSE-hero-copy-center {
     gap: 25px;
@@ -148,7 +159,7 @@ body {
   }
 
   .citrusStylesSE-heroCopy h1 {
-    font-size: calc(var(--citrusStylesSE-text-font-size-super) - 2px);
+    font-size: calc(var(--citrusStylesSE-text-font-size-super) - 7px);
     text-align: center;
     padding-bottom: 10px;
   }
@@ -238,10 +249,13 @@ body {
     padding: 20px 20px 40px;
   }
 
+  .citrusStylesSE-grid-text h2 {
+    padding: 20px 0 0;
+  }
+
   .citrusStylesSE-grid-text p {
     max-width: 300px;
     margin: 0 auto;
-    padding: 0 0 25px;
   }
 
   .citrusStyleSE-iframe iframe {

@@ -1,0 +1,1201 @@
+<!-- This brand page developed by SEBPO CitrusAd Team. AEM_Code handoff 18th june 2024 -->
+<style>
+    /*!
+ * CitrusStylesSE  v1.0 (https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css)
+ * Copyright 2024 the SEBPO Authors (https://sebpo.com/)
+ * Licensed under SEBPO (https://sebpo.com/)
+ */
+    /* ===================== CSS Variable ===================== */
+    :root {
+        --citrusStylesSE-primary-navy: #001952;
+        /* -Mostly used for font color */
+        --citrusStylesSE-secondary-navy: #00205b;
+        /* -Mostly used for bg color */
+        --citrusStylesSE-navy-021B4E: #021b4e;
+        /* need new naming*/
+        --citrusStylesSE-navy-light: #1f52a0;
+        /* -Mostly used for bg color */
+        --citrusStylesSE-blue-15-percent: #6edcfa;
+        /* -Mostly used for bg color */
+        --citrusStylesSE-white: #ffffff;
+        --citrusStylesSE-black: #000000;
+        --citrusStylesSE-black-light: #333333;
+        --citrusStylesSE-gray-light: #d8d8d8;
+        --citrusStylesSE-gray-F6F6F6: #f6f6f6;
+        /* need new naming*/
+        --citrusStylesSE-silver: #f4f7ff;
+        /* need new naming*/
+        --citrusStylesSE-pink-10-percent: #df3995;
+        /* -Mostly used for bg color */
+
+        /* Borders */
+        --citrusStylesSE-border-width: 1px;
+        --citrusStylesSE-border-style: solid;
+        --citrusStylesSE-border-color: var(--citrusStylesSE-primary);
+        --citrusStylesSE-border-radius-5: 5px;
+        --citrusStylesSE-border-radius: 6px;
+        --citrusStylesSE-border-radius-10: 10px;
+        --citrusStylesSE-border-radius-15: 15px;
+        --citrusStylesSE-border-radius-20: 20px;
+        --citrusStylesSE-border-radius-30: 30px;
+        --citrusStylesSE-border-radius-rounded: 30em;
+
+        /* Box shadows */
+        --citrusStylesSE-box-shadow: 0 0 1px rgb(0 0 0 / 60%);
+        --citrusStylesSE-box-shadow-high: 0 5px 10px -3px rgb(0 0 0 / 40%);
+        --citrusStylesSE-box-shadow-higher: 0 10px 25px -4px rgb(0 0 0 / 40%);
+        --citrusStylesSE-box-shadow-highest: 0 20px 55px -8px rgb(0 0 0 / 40%);
+
+        /* Disabled */
+        --citrusStylesSE-no-opacity: 0;
+        --citrusStylesSE-disabled-opacity: 0.5;
+
+        /* Grid */
+        --citrusStylesSE-grid-gutter: 1em;
+
+        /* Spacing */
+        --citrusStylesSE-spacing-super: 3em;
+        --citrusStylesSE-spacing-xlarge: 2em;
+        --citrusStylesSE-spacing-large: 1.5em;
+        --citrusStylesSE-spacing-medium: 1em;
+        --citrusStylesSE-spacing-small: 0.5em;
+        --citrusStylesSE-spacing-xsmall: 0.25em;
+        --citrusStylesSE-spacing-tiny: 0.125em;
+
+        /* Screen widths */
+        --citrusStylesSE-screen-limit-xsmall: 20em;
+        --citrusStylesSE-screen-limit-small: 30em;
+        --citrusStylesSE-screen-limit-medium: 48em;
+        --citrusStylesSE-screen-limit-large: 64em;
+        --citrusStylesSE-screen-limit-xlarge: 78em;
+        --citrusStylesSE-screen-limit-super: 116em;
+
+        /* Z Indexes */
+        --citrusStylesSE-z-over-content: 100;
+        --citrusStylesSE-z-over-control: 200;
+        --citrusStylesSE-z-over-page: 300;
+        --citrusStylesSE-z-over-screen: 400;
+        --citrusStylesSE-z-over-everything: 500;
+
+        /* Globale variables */
+        --citrusStylesSE-primary-navy: #001952;
+        /* -Mostly used for font color */
+        --citrusStylesSE-secondary-navy: #00205b;
+        /* -Mostly used for bg color */
+        --citrusStylesSE-navy-021B4E: #021b4e;
+        /* need new naming*/
+        --citrusStylesSE-navy-light: #1f52a0;
+        /* -Mostly used for bg color */
+        --citrusStylesSE-blue-15-percent: #6edcfa;
+        /* -Mostly used for bg color */
+        --citrusStylesSE-white: #ffffff;
+        --citrusStylesSE-black: #000000;
+        --citrusStylesSE-black-light: #333333;
+        --citrusStylesSE-gray-light: #d8d8d8;
+        --citrusStylesSE-gray-F6F6F6: #f6f6f6;
+        /* need new naming*/
+        --citrusStylesSE-silver: #f4f7ff;
+        /* need new naming*/
+        --citrusStylesSE-pink-10-percent: #df3995;
+        /* -Mostly used for bg color */
+
+        --citrusStylesSE-gray-100: #f8f9fa;
+        --citrusStylesSE-gray-200: #e9ecef;
+        --citrusStylesSE-gray-300: #dee2e6;
+        --citrusStylesSE-gray-400: #ced4da;
+        --citrusStylesSE-gray-500: #adb5bd;
+        --citrusStylesSE-gray-600: #6c757d;
+        --citrusStylesSE-gray-700: #495057;
+        --citrusStylesSE-gray-800: #343a40;
+        --citrusStylesSE-gray-900: #212529;
+        --citrusStylesSE-primary: #0d6efd;
+        --citrusStylesSE-secondary: #6c757d;
+        --citrusStylesSE-success: #198754;
+        --citrusStylesSE-info: #0dcaf0;
+        --citrusStylesSE-warning: #ffc107;
+        --citrusStylesSE-danger: #dc3545;
+        --citrusStylesSE-light: #f8f9fa;
+        --citrusStylesSE-dark: #212529;
+        --citrusStylesSE-color--background: var(--citrusStylesSE-secondary);
+        --citrusStylesSE-color--background-offset: var(--citrusStylesSE-color--9);
+        --citrusStylesSE-color--background-offset-2: var(--citrusStylesSE-color--8);
+        --citrusStylesSE-color--text: var(--citrusStylesSE-color--0);
+        --citrusStylesSE-color--citrusStylesSE-text-inverse: var(--citrusStylesSE-color--background);
+        --citrusStylesSE-color--quiet: var(--citrusStylesSE-color--4);
+        --citrusStylesSE-color--00: #000;
+        --citrusStylesSE-color--0: #1f1f1f;
+        --citrusStylesSE-color--1: #3a3a3a;
+        --citrusStylesSE-color--2: #6a6a6a;
+        --citrusStylesSE-color--3: #8a8a8a;
+        --citrusStylesSE-color--4: #aaa;
+        --citrusStylesSE-color--5: #bababa;
+        --citrusStylesSE-color--6: #cacaca;
+        --citrusStylesSE-color--7: #dadada;
+        --citrusStylesSE-color--8: #eaeaea;
+        --citrusStylesSE-color--9: #fafafa;
+        --citrusStylesSE-color--10: #fff;
+        --citrusStylesSE-color--outline: #4267ff;
+        --citrusStylesSE-color--brand: #e717fa;
+        --citrusStylesSE-color--info: #4267ff;
+        --citrusStylesSE-color--warning: #ffa500;
+        --citrusStylesSE-color--success: #088a05;
+        --citrusStylesSE-color--error: #ee0202;
+        --citrusStylesSE-color--highlight: #ffef14;
+        --citrusStylesSE-color--citrusStylesSE-text-brand: var(--citrusStylesSE-color--10);
+        --citrusStylesSE-color--citrusStylesSE-text-info: var(--citrusStylesSE-color--10);
+        --citrusStylesSE-color--citrusStylesSE-text-warning: var(--citrusStylesSE-color--0);
+        --citrusStylesSE-color--citrusStylesSE-text-success: var(--citrusStylesSE-color--10);
+        --citrusStylesSE-color--citrusStylesSE-text-error: var(--citrusStylesSE-color--10);
+        --citrusStylesSE-color--citrusStylesSE-text-highlight: var(--citrusStylesSE-color--0);
+        --citrusStylesSE-color--transparent: transparent;
+
+        /* Avatars */
+        --citrusStylesSE-avatar-color: var(--citrusStylesSE-color-text-brand);
+        --citrusStylesSE-avatar-background: var(--citrusStylesSE-color-brand);
+        --citrusStylesSE-avatar-border-radius: var(--citrusStylesSE-border-radius-rounded);
+
+        /* Badges */
+        --citrusStylesSE-badge-color: var(--citrusStylesSE-color-text-inverse);
+        --citrusStylesSE-badge-color--ghost: var(--citrusStylesSE-color-text);
+        --citrusStylesSE-badge-background: var(--citrusStylesSE-color-text);
+        --citrusStylesSE-badge-border-color: transparent;
+        --citrusStylesSE-badge-border-color--ghost: var(--citrusStylesSE-badge-color--ghost);
+
+        --citrusStylesSE-badge-color--brand: var(--citrusStylesSE-color-text-brand);
+        --citrusStylesSE-badge-color--brand-ghost: var(--citrusStylesSE-color-brand);
+        --citrusStylesSE-badge-background--brand: var(--citrusStylesSE-color-brand);
+        --citrusStylesSE-badge-border-color--brand: transparent;
+        --citrusStylesSE-badge-border-color--brand-ghost: var(--citrusStylesSE-badge-color--brand-ghost);
+
+        --citrusStylesSE-badge-color--info: var(--citrusStylesSE-color-text-info);
+        --citrusStylesSE-badge-color--info-ghost: var(--citrusStylesSE-color-info);
+        --citrusStylesSE-badge-background--info: var(--citrusStylesSE-color-info);
+        --citrusStylesSE-badge-border-color--info: transparent;
+        --citrusStylesSE-badge-border-color--info-ghost: var(--citrusStylesSE-badge-color--info-ghost);
+
+        --citrusStylesSE-badge-color--warning: var(--citrusStylesSE-color-text-warning);
+        --citrusStylesSE-badge-color--warning-ghost: var(--citrusStylesSE-color-warning);
+        --citrusStylesSE-badge-background--warning: var(--citrusStylesSE-color-warning);
+        --citrusStylesSE-badge-border-color--warning: transparent;
+        --citrusStylesSE-badge-border-color--warning-ghost: var(--citrusStylesSE-badge-color--warning-ghost);
+
+        --citrusStylesSE-badge-color--success: var(--citrusStylesSE-color-text-success);
+        --citrusStylesSE-badge-color--success-ghost: var(--citrusStylesSE-color-success);
+        --citrusStylesSE-badge-background--success: var(--citrusStylesSE-color-success);
+        --citrusStylesSE-badge-border-color--success: transparent;
+        --citrusStylesSE-badge-border-color--success-ghost: var(--citrusStylesSE-badge-color--success-ghost);
+
+        --citrusStylesSE-badge-color--error: var(--citrusStylesSE-color-text-error);
+        --citrusStylesSE-badge-color--error-ghost: var(--citrusStylesSE-color-error);
+        --citrusStylesSE-badge-background--error: var(--citrusStylesSE-color-error);
+        --citrusStylesSE-badge-border-color--error: transparent;
+        --citrusStylesSE-badge-border-color--error-ghost: var(--citrusStylesSE-badge-color--error-ghost);
+
+        /* Borders */
+        --citrusStylesSE-border-width: 1px;
+        --citrusStylesSE-border-style: solid;
+        --citrusStylesSE-border-color: var(--citrusStylesSE-primary);
+        --citrusStylesSE-border-radius-5: 5px;
+        --citrusStylesSE-border-radius: 6px;
+        --citrusStylesSE-border-radius-10: 10px;
+        --citrusStylesSE-border-radius-15: 15px;
+        --citrusStylesSE-border-radius-20: 20px;
+        --citrusStylesSE-border-radius-30: 30px;
+        --citrusStylesSE-border-radius-rounded: 30em;
+
+        /* Box shadows */
+        --citrusStylesSE-box-shadow: 0 0 1px rgb(0 0 0 / 60%);
+        --citrusStylesSE-box-shadow-high: 0 5px 10px -3px rgb(0 0 0 / 40%);
+        --citrusStylesSE-box-shadow-higher: 0 10px 25px -4px rgb(0 0 0 / 40%);
+        --citrusStylesSE-box-shadow-highest: 0 20px 55px -8px rgb(0 0 0 / 40%);
+
+        /* Buttons */
+        --citrusStylesSE-button-color: var(--citrusStylesSE-color--citrusStylesSE-text-inverse);
+        --citrusStylesSE-button-background: var(--citrusStylesSE-secondary);
+        --citrusStylesSE-button-color--ghost: var(--citrusStylesSE-color--text);
+        --citrusStylesSE-button-color--ghost-hover: var(--citrusStylesSE-color--citrusStylesSE-text-inverse);
+        --citrusStylesSE-button-background--ghost: transparent;
+        --citrusStylesSE-button-color--close: var(--citrusStylesSE-color--text);
+        --citrusStylesSE-button-color--brand: var(--citrusStylesSE-color--citrusStylesSE-text-brand);
+        --citrusStylesSE-button-color--brand-ghost: var(--citrusStylesSE-color--brand);
+        --citrusStylesSE-button-color--brand-ghost-hover: var(--citrusStylesSE-color--citrusStylesSE-text-brand);
+        --citrusStylesSE-button-background--brand: var(--citrusStylesSE-color--brand);
+        --citrusStylesSE-button-background--brand-ghost: transparent;
+        --citrusStylesSE-button-color--info: var(--citrusStylesSE-color--citrusStylesSE-text-info);
+        --citrusStylesSE-button-color--info-ghost: var(--citrusStylesSE-color--info);
+        --citrusStylesSE-button-color--info-ghost-hover: var(--citrusStylesSE-color--citrusStylesSE-text-info);
+        --citrusStylesSE-button-background--info: var(--citrusStylesSE-color--info);
+        --citrusStylesSE-button-background--info-ghost: transparent;
+        --citrusStylesSE-button-color--warning: var(--citrusStylesSE-color--citrusStylesSE-text-warning);
+        --citrusStylesSE-button-color--warning-ghost: var(--citrusStylesSE-color--warning);
+        --citrusStylesSE-button-color--warning-ghost-hover: var(--citrusStylesSE-color--citrusStylesSE-text-warning);
+        --citrusStylesSE-button-background--warning: var(--citrusStylesSE-color--warning);
+        --citrusStylesSE-button-background--warning-ghost: transparent;
+        --citrusStylesSE-button-color--success: var(--citrusStylesSE-color--citrusStylesSE-text-success);
+        --citrusStylesSE-button-color--success-ghost: var(--citrusStylesSE-color--success);
+        --citrusStylesSE-button-color--success-ghost-hover: var(--citrusStylesSE-color--citrusStylesSE-text-success);
+        --citrusStylesSE-button-background--success: var(--citrusStylesSE-color--success);
+        --citrusStylesSE-button-background--success-ghost: transparent;
+        --citrusStylesSE-button-color--error: var(--citrusStylesSE-color--citrusStylesSE-text-error);
+        --citrusStylesSE-button-color--error-ghost: var(--citrusStylesSE-color--error);
+        --citrusStylesSE-button-color--error-ghost-hover: var(--citrusStylesSE-color--citrusStylesSE-text-error);
+        --citrusStylesSE-button-background--error: var(--citrusStylesSE-color--error);
+        --citrusStylesSE-button-background--error-ghost: transparent;
+        --citrusStylesSE-button-border-radius: var(--citrusStylesSE-border-radius);
+        /* End Buttons */
+
+        /* Colors */
+        --citrusStylesSE-color-background: var(--citrusStylesSE-color-10);
+        --citrusStylesSE-color-background-offset: var(--citrusStylesSE-color-9);
+        --citrusStylesSE-color-background-offset-2: var(--citrusStylesSE-color-8);
+        --citrusStylesSE-color-text: var(--citrusStylesSE-color-0);
+        --citrusStylesSE-color-text-inverse: var(--citrusStylesSE-color-background);
+        --citrusStylesSE-color-quiet: var(--citrusStylesSE-color-4);
+
+        --citrusStylesSE-color-00: #000;
+        --citrusStylesSE-color-0: #1f1f1f;
+        --citrusStylesSE-color-1: #3a3a3a;
+        --citrusStylesSE-color-2: #6a6a6a;
+        --citrusStylesSE-color-3: #8a8a8a;
+        --citrusStylesSE-color-4: #aaa;
+        --citrusStylesSE-color-5: #bababa;
+        --citrusStylesSE-color-6: #cacaca;
+        --citrusStylesSE-color-7: #dadada;
+        --citrusStylesSE-color-8: #eaeaea;
+        --citrusStylesSE-color-9: #fafafa;
+        --citrusStylesSE-color-10: #fff;
+
+        --citrusStylesSE-color-outline: #4267ff;
+        --citrusStylesSE-color-brand: #2c3e50;
+        --citrusStylesSE-color-info: #4267ff;
+        --citrusStylesSE-color-warning: #ffa500;
+        --citrusStylesSE-color-success: #088a05;
+        --citrusStylesSE-color-error: #ee0202;
+        --citrusStylesSE-color-highlight: #ffef14;
+
+        --citrusStylesSE-color-text-brand: var(--citrusStylesSE-color-10);
+        --citrusStylesSE-color-text-info: var(--citrusStylesSE-color-10);
+        --citrusStylesSE-color-text-warning: var(--citrusStylesSE-color-0);
+        --citrusStylesSE-color-text-success: var(--citrusStylesSE-color-10);
+        --citrusStylesSE-color-text-error: var(--citrusStylesSE-color-10);
+        --citrusStylesSE-color-text-highlight: var(--citrusStylesSE-color-0);
+
+        --citrusStylesSE-color-disabled: var(--citrusStylesSE-color-4);
+        --citrusStylesSE-color-disabled-background: var(--citrusStylesSE-color-8);
+        --citrusStylesSE-color-transparent: transparent;
+
+        /* Disabled */
+        --citrusStylesSE-disabled-opacity: 0.5;
+        --citrusStylesSE-disabled-opacity: 0.5;
+        --citrusStylesSE-color--disabled: var(--citrusStylesSE-color--4);
+        --citrusStylesSE-color--citrusStylesSE-disabled-background: var(--citrusStylesSE-color--8);
+
+        /* Grid */
+        --citrusStylesSE-grid-gutter: 1em;
+
+        /* Spacing */
+        --citrusStylesSE-spacing-super: 3em;
+        --citrusStylesSE-spacing-xlarge: 2em;
+        --citrusStylesSE-spacing-large: 1.5em;
+        --citrusStylesSE-spacing-medium: 1em;
+        --citrusStylesSE-spacing-small: 0.5em;
+        --citrusStylesSE-spacing-xsmall: 0.25em;
+        --citrusStylesSE-spacing-tiny: 0.125em;
+
+        /* Screen widths */
+        --citrusStylesSE-screen-limit-xsmall: 20em;
+        --citrusStylesSE-screen-limit-small: 30em;
+        --citrusStylesSE-screen-limit-medium: 48em;
+        --citrusStylesSE-screen-limit-large: 64em;
+        --citrusStylesSE-screen-limit-xlarge: 78em;
+        --citrusStylesSE-screen-limit-super: 116em;
+
+        /* Modals */
+        --citrusStylesSE-modal-background: var(--citrusStylesSE-card-background);
+        --citrusStylesSE-modal-background--ghost: transparent;
+        --citrusStylesSE-modal-border-radius: var(--citrusStylesSE-border-radius);
+        --citrusStylesSE-modal-close-color: var(--citrusStylesSE-color-0);
+        --citrusStylesSE-modal-close-color--ghost: var(--citrusStylesSE-color-10);
+
+        /* Tabs */
+        --citrusStylesSE-tab-heading-color: var(--citrusStylesSE-color-text);
+        --citrusStylesSE-tab-heading-background: transparent;
+        --citrusStylesSE-tab-heading-border-color: transparent;
+
+        --citrusStylesSE-tab-heading-color--active: var(--citrusStylesSE-color-text);
+        --citrusStylesSE-tab-heading-background--active: var(--citrusStylesSE-color-background-offset);
+        --citrusStylesSE-tab-heading-border-color--active: var(--citrusStylesSE-color-2);
+
+        --citrusStylesSE-tab-heading-color--hover: var(--citrusStylesSE-color-text);
+        --citrusStylesSE-tab-heading-background--hover: var(--citrusStylesSE-color-background-offset);
+        --citrusStylesSE-tab-heading-border-color--hover: var(--citrusStylesSE-color-2);
+
+        --citrusStylesSE-tab-heading-color--brand: var(--citrusStylesSE-color-text);
+        --citrusStylesSE-tab-heading-background--brand: var(--citrusStylesSE-color-background-offset);
+        --citrusStylesSE-tab-heading-border-color--brand: var(--citrusStylesSE-color-brand);
+
+        --citrusStylesSE-tab-heading-color--info: var(--citrusStylesSE-color-text);
+        --citrusStylesSE-tab-heading-background--info: var(--citrusStylesSE-color-background-offset);
+        --citrusStylesSE-tab-heading-border-color--info: var(--citrusStylesSE-color-info);
+
+        --citrusStylesSE-tab-heading-color--warning: var(--citrusStylesSE-color-text);
+        --citrusStylesSE-tab-heading-background--warning: var(--citrusStylesSE-color-background-offset);
+        --citrusStylesSE-tab-heading-border-color--warning: var(--citrusStylesSE-color-warning);
+
+        --citrusStylesSE-tab-heading-color--success: var(--citrusStylesSE-color-text);
+        --citrusStylesSE-tab-heading-background--success: var(--citrusStylesSE-color-background-offset);
+        --citrusStylesSE-tab-heading-border-color--success: var(--citrusStylesSE-color-success);
+
+        --citrusStylesSE-tab-heading-color--error: var(--citrusStylesSE-color-text);
+        --citrusStylesSE-tab-heading-background--error: var(--citrusStylesSE-color-background-offset);
+        --citrusStylesSE-tab-heading-border-color--error: var(--citrusStylesSE-color-error);
+
+        --citrusStylesSE-tab-heading-border-radius: var(--citrusStylesSE-border-radius);
+
+        /* Typography */
+        --citrusStylesSE-text-font-family-sans-serif: sans-serif;
+        --citrusStylesSE-text-font-family-serif: serif;
+        --citrusStylesSE-text-font-family-mono: monospace;
+        --citrusStylesSE-text-font-family: var(--citrusStylesSE-text-font-family-sans-serif);
+        --citrusStylesSE-text-font-size-super: 2em;
+        /* 32px */
+        --citrusStylesSE-text-font-size-xlarge: 1.5em;
+        /* 24px */
+        --citrusStylesSE-text-font-size-large: 1.25em;
+        /* 20px */
+        --citrusStylesSE-text-font-size-medium: 1em;
+        /* 16px */
+        --citrusStylesSE-text-font-size-small: 0.75em;
+        /* 12px */
+        --citrusStylesSE-text-font-size-xsmall: 0.5em;
+        /* 8px */
+        --citrusStylesSE-text-font-weight: normal;
+        --citrusStylesSE-text-font-weight-heavy: bold;
+        --citrusStylesSE-text-line-height: 1.55;
+        --citrusStylesSE-text-font-weight-Regular: 400;
+        --citrusStylesSE-text-font-weight-Medium: 500;
+        --citrusStylesSE-text-font-weight-Bold: 700;
+        --citrusStylesSE-text-font-weight-Black: 900;
+        --citrusStylesSE-font-family-PetcoRegular: PetcoCircular-Regular, arial !important;
+        --citrusStylesSE-font-family-PetcoMedium: PetcoCircular-Medium, arial !important;
+        --citrusStylesSE-font-family-PetcoBold: PetcoCircular-Bold, arial !important;
+        --citrusStylesSE-font-family-PetcoBlack: PetcoCircular-Black, arial !important;
+
+        /* Tables */
+        --citrusStylesSE-table-caption-color: var(--citrusStylesSE-color-quiet);
+        --citrusStylesSE-table-striped-background: var(--citrusStylesSE-color-background-offset);
+        --citrusStylesSE-table-heading-background: var(--citrusStylesSE-color-background);
+
+        --citrusStylesSE-table-row-color: var(--citrusStylesSE-color-text);
+        --citrusStylesSE-table-row-background: var(--citrusStylesSE-color-background);
+
+        --citrusStylesSE-table-row-color--clickable: var(--citrusStylesSE-link-color);
+        --citrusStylesSE-table-row-background--clickable: var(--citrusStylesSE-color-background-offset-2);
+
+        --citrusStylesSE-table-row-color--disabled: var(--citrusStylesSE-color-4);
+        --citrusStylesSE-table-row-background--disabled: inherit;
+
+        --citrusStylesSE-table-heading-border: var(--citrusStylesSE-border-width) var(--citrusStylesSE-border-style) var(--citrusStylesSE-border-color);
+
+        /* Timelines */
+        --citrusStylesSE-timeline-item-color: var(--citrusStylesSE-color-text);
+        --citrusStylesSE-timeline-line-color: var(--citrusStylesSE-border-color);
+        --citrusStylesSE-timeline-spacing-color: var(--citrusStylesSE-color-background);
+
+        --citrusStylesSE-timeline-item-color--brand: var(--citrusStylesSE-color-brand);
+        --citrusStylesSE-timeline-item-color--info: var(--citrusStylesSE-color-info);
+        --citrusStylesSE-timeline-item-color--warning: var(--citrusStylesSE-color-warning);
+        --citrusStylesSE-timeline-item-color--success: var(--citrusStylesSE-color-success);
+        --citrusStylesSE-timeline-item-color--error: var(--citrusStylesSE-color-error);
+        --citrusStylesSE-timeline-item-color--loading: var(--citrusStylesSE-timeline-item-color);
+
+        /* Z Indexes */
+        --citrusStylesSE-z-over-content: 100;
+        --citrusStylesSE-z-over-control: 200;
+        --citrusStylesSE-z-over-page: 300;
+        --citrusStylesSE-z-over-screen: 400;
+        --citrusStylesSE-z-over-everything: 500;
+    }
+
+    /* All the buttons styles*/
+    .citrusStylesSE-button:not(:disabled, [disabled]):not(:active):hover {
+        filter: brightness(0.95);
+    }
+
+    .citrusStylesSE-button.citrusStylesSE-button--close:not( :disabled,
+        [disabled]):not(:active):hover {
+        filter: brightness(0.95);
+    }
+
+    .citrusStylesSE-button.citrusStylesSE-button--nude:not( :disabled,
+        [disabled]):not(:active):focus {
+        border-color: var(--citrusStylesSE-border-color-focus);
+        box-shadow: var(--citrusStylesSE-box-shadow-focus);
+    }
+
+    /* ===================== End Blaze Buttons ===================== */
+
+    /* ===================== Common Class ===================== */
+    /* All the Common Class added here */
+
+    .citrusStylesSE-header1,
+    .citrusStylesSE-header2,
+    .citrusStylesSE-header4 {
+        font-family: var(--citrusStylesSE-font-family-PetcoBold);
+        font-weight: var(--citrusStylesSE-text-font-weight-Bold);
+        margin: 0;
+    }
+
+    .citrusStylesSE-para {
+        margin: 0;
+        font-family: var(--citrusStylesSE-font-family-PetcoRegular);
+        font-weight: var(--citrusStylesSE-text-font-weight-Regular);
+    }
+
+    .citrusStylesSE-disclaimer {
+        font-family: var(--citrusStylesSE-font-family-PetcoRegular);
+        font-weight: var(--citrusStylesSE-text-font-weight-Regular);
+        margin: 0;
+    }
+
+    .citrusStylesSE-url {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .citrusStylesSE-img {
+        width: 100%;
+    }
+
+    .citrusStylesSE-section__title {
+        padding: 2.5em 1em;
+        text-align: center;
+    }
+
+    .citrusStylesSE-section__title .citrusStylesSE-header2 {
+        font-size: var(--citrusStylesSE-text-font-size-xlarge);
+        text-align: inherit;
+        color: var(--citrusStylesSE-black);
+        font-family: var(--citrusStylesSE-font-family-PetcoBold);
+    }
+
+    .citrusStylesSE-grid__cell {
+        padding: 0;
+    }
+
+    /* Show/Hide Class for Desktop and Mobile */
+    .citrusStylesSE-d-hide {
+        display: none;
+    }
+
+    .citrusStylesSE-m-hide {
+        display: block;
+    }
+
+    /*Common block for CTA Box-Button with background color */
+    .citrusStylesSE-btn-primary-navy {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .citrusStylesSE-container {
+        max-width: 90em;
+        margin: 0 auto;
+    }
+
+    .citrusStylesSE-overflow-x {
+        overflow-x: auto;
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .citrusStylesSE-no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .citrusStylesSE-no-scrollbar {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    /* ===================== End Common Class ===================== */
+
+    /* ===================== Card ===================== */
+    /* All the Card styles added here */
+
+    .citrusStylesSE-card__control:not(:disabled, [disabled]):not(:active):hover {
+        filter: brightness(0.95);
+    }
+
+    /* Modal card */
+
+    /* ===================== End Card ===================== */
+
+    /* ===================== Containers ===================== */
+    /* All sizes containers styles */
+    .citrusStylesSE-container--large {
+        max-width: 64em;
+    }
+
+    .citrusStylesSE-container--super {
+        max-width: 116em;
+    }
+
+    /* ===================== End Containers ===================== */
+
+    .citrusStylesSE-PetcoRegular {
+        font-family: var(--citrusStylesSE-font-family-PetcoRegular);
+        font-weight: var(--citrusStylesSE-text-font-weight-Regular);
+    }
+
+    .citrusStylesSE-PetcoMedium {
+        font-family: var(--citrusStylesSE-font-family-PetcoMedium);
+        font-weight: var(--citrusStylesSE-text-font-weight-Medium);
+    }
+
+    .citrusStylesSE-PetcoBold {
+        font-family: var(--citrusStylesSE-font-family-PetcoBold);
+        font-weight: var(--citrusStylesSE-text-font-weight-Bold);
+    }
+
+    /* ===================== End Petco Fonts ===================== */
+
+    /* ===================== Grid ===================== */
+    /* All styles for grid */
+
+    .citrusStylesSE-grid {
+        display: flex;
+    }
+
+    .citrusStylesSE-grid--center {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .citrusStylesSE-grid--no-gutter>.citrusStylesSE-grid__cell {
+        padding-right: 0.001em;
+        padding-left: 0.001em;
+    }
+
+    .citrusStylesSE-grid__cell {
+        flex: 1;
+        padding-right: var(--citrusStylesSE-grid-gutter);
+        padding-left: var(--citrusStylesSE-grid-gutter);
+    }
+
+    /* ===================== Utility Class ===================== */
+    /* Utility styles - Alignments */
+
+    .citrusStylesSE-centered {
+        text-align: center;
+    }
+
+    /* End Alignments */
+
+    /* Letter Box */
+    .citrusStylesSE-letter-box-super {
+        padding-top: var(--citrusStylesSE-spacing-super) !important;
+        padding-bottom: var(--citrusStylesSE-spacing-super) !important;
+    }
+
+    /* End Letter Box */
+
+    /* Visibility */
+    /* End Visibility */
+    .citrusStylesSE-grid__cell--center {
+        align-self: center;
+    }
+
+    .citrusStylesSE-grid__cell--no-gutter {
+        padding-right: 0.001em;
+        padding-left: 0.001em;
+    }
+
+    /* ===================== End Utility Class ===================== */
+    /* ===================== Responsiveness ===================== */
+    /* All the Responsiveness styles */
+
+    @media (min-width: 64em) {
+        /* min-width:1024px */
+
+        /* CTA Box-Button with background color */
+        .citrusStylesSE-btn-primary-navy .citrusStylesSE-url {
+            border-radius: var(--citrusStylesSE-border-radius-5);
+            background: var(--citrusStylesSE-primary-navy);
+            color: var(--citrusStylesSE-white);
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: "PetcoCircular-Bold", arial !important;
+            font-weight: 700;
+            width: 211px;
+            padding: 1.125em 0;
+        }
+
+        .citrusStylesSE-btn-primary-navy .citrusStylesSE-url:focus-visible,
+        .citrusStylesSE-btn-secondary-white .citrusStylesSE-url:focus-visible {
+            outline: none;
+        }
+
+        .citrusStylesSE-btn-primary-navy .citrusStylesSE-url:hover {
+            color: var(--citrusStylesSE-white);
+        }
+
+        /* CTA Box-Button with white background color */
+    }
+
+    @media (min-width: 64em) and (max-width: 77.99em) {
+        /* min-width:1024px and max-width: 1247.99*/
+    }
+
+    @media (max-width: 63.999em) {
+        /* max-width: 1023.99px */
+
+        /* Reverse CTA for Box-Button - without background color on Mobile */
+        .citrusStylesSE-btn-primary-navy .citrusStylesSE-url {
+            color: var(--citrusStylesSE-primary-navy);
+            padding: 0;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: underline;
+            font-family: "PetcoCircular-Bold", arial !important;
+            font-weight: 700;
+        }
+
+        .citrusStylesSE-btn-primary-navy .citrusStylesSE-url:focus-visible,
+        .citrusStylesSE-btn-secondary-white .citrusStylesSE-url:focus-visible {
+            outline: none;
+        }
+
+        .citrusStylesSE-btn-primary-navy a:hover {
+            color: var(--citrusStylesSE-primary-navy);
+        }
+
+        /* Reverse CTA for Box-Button - white without background color on Mobile */
+    }
+
+    @media (min-width: 48em) {
+        /* min-width: 768px */
+    }
+
+    @media (min-width: 48em) and (max-width: 63.99em) {
+        /* min-width:768px and max-width: 1023.99*/
+    }
+
+    @media (max-width: 47.99em) {
+        /* max-width:767.99px, all the mobile styles can be used this break-point*/
+
+        /* Show/Hide Class */
+        .citrusStylesSE-d-hide {
+            display: block;
+        }
+
+        .citrusStylesSE-m-hide {
+            display: none;
+        }
+
+        /* Hero POV flex directions column in mobile */
+    }
+
+    @media (min-width: 30em) and (max-width: 47.99em) {
+
+        /* min-width:480px and max-width: 767.99*/
+        .citrusStylesSE-grid.citrusStylesSE-grid--medium-full {
+            flex-wrap: wrap;
+        }
+
+        .citrusStylesSE-grid.citrusStylesSE-grid--medium-full>.citrusStylesSE-grid__cell {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-left: 0;
+        }
+    }
+
+    @media (min-width: 20em) {
+        .citrusStylesSE-grid__cell--width-70\@xsmall {
+            flex: 0 0 70%;
+            max-width: 70%;
+        }
+    }
+
+    @media (min-width: 20em) and (max-width: 29.99em) {
+
+        /* min-width:320px and max-width: 479.99*/
+        .citrusStylesSE-grid.citrusStylesSE-grid--small-full {
+            flex-wrap: wrap;
+        }
+
+        .citrusStylesSE-grid.citrusStylesSE-grid--small-full>.citrusStylesSE-grid__cell {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-left: 0;
+        }
+    }
+
+    /* Small Devices - below 320px */
+    @media (max-width: 19.99em) {
+        /* width 319.99px */
+    }
+
+    @media (min-width: 48em) {
+        .citrusStylesSE-grid__cell--width-50\@medium {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+
+    @media (min-width: 64em) {
+        .citrusStylesSE-grid__cell--width-33\@large {
+            flex: 0 0 33.3333333333%;
+            max-width: 33.3333333333%;
+        }
+    }
+
+    /* ===================== End Responsiveness ===================== */
+
+    /* hero banner */
+    .citrusStylesSE-container {
+        position: relative;
+    }
+
+    .citrusStylesSE-heroImage-copy {
+        position: absolute;
+        width: 94%;
+        height: 100%;
+        top: 0;
+        display: flex;
+        margin: auto 5%;
+    }
+
+    .citrusStylesSE-hero-copy-center {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: calc(var(--citrusStylesSE-spacing-xlarge) - 2px);
+    }
+
+    .citrusStylesSE-logo img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .citrusStylesSE-heroCopy h1 {
+        font-size: 45px;
+        color: var(--citrusStylesSE-primary-navy);
+        padding-bottom: 0px;
+    }
+
+    .citrusStylesSE-heroCopy p {
+        font-size: 20px;
+        color: var(--citrusStylesSE-black);
+        padding-bottom: 30px;
+    }
+
+    .citrusStylesSE-hero-rightCTA a {
+        display: block;
+        width: 170px;
+        background: var(--citrusStylesSE-primary-navy);
+        font-family: "PetcoCircular-Black", arial !important;
+        font-size: 16px;
+        line-height: 52px;
+        font-weight: 700;
+        text-align: center;
+        color: var(--citrusStylesSE-white);
+        border: 1px solid var(--citrusStylesSE-primary-navy);
+        border-radius: 5px;
+        text-transform: uppercase;
+    }
+
+    .citrusStylesSE-grid-text h2 {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .citrusStylesSE-grid-text p {
+        padding: 10px 0 20px;
+        margin: 0 auto;
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: 1400px) {
+        .citrusStylesSE-hero-copy-center {
+            gap: 25px;
+        }
+
+        .citrusStylesSE-heroCopy h1 {
+            font-size: calc(var(--citrusStylesSE-text-font-size-super) + 8px);
+        }
+
+        .citrusStylesSE-logo img {
+            max-width: 200px;
+        }
+    }
+
+    @media screen and (max-width: 1300px) {
+        .citrusStylesSE-heroCopy h1 {
+            padding-bottom: 10px;
+        }
+
+        .citrusStylesSE-heroCopy p {
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+
+        .citrusStylesSE-hero-copy-center {
+            column-gap: calc(var(--citrusStylesSE-spacing-small));
+            padding-left: 5px;
+        }
+    }
+
+    @media all and (min-width: 922px) and (max-width: 1100px) {
+        .citrusStylesSE-heroImage-copy {
+            top: -3%;
+        }
+
+        .citrusStylesSE-heroCopy h1 {
+            font-size: calc(var(--citrusStylesSE-text-font-size-super) - 4px);
+            padding: 5px;
+        }
+
+        .citrusStylesSE-heroCopy p {
+            font-size: 16px;
+            padding-bottom: 15px;
+        }
+    }
+
+    @media screen and (max-width: 950px) {
+        .citrusStylesSE-hero-copy-center {
+            column-gap: calc(var(--citrusStylesSE-spacing-small));
+        }
+    }
+
+    @media all and (min-width: 768px) and (max-width: 921px) {
+        .citrusStylesSE-heroImage-copy {
+            top: 0;
+            align-items: flex-start;
+        }
+
+        .citrusStylesSE-logo img {
+            max-width: 105px;
+        }
+
+        .citrusStylesSE-heroCopy h1 {
+            font-size: 30px;
+            line-height: 30px;
+            padding-bottom: 0px;
+        }
+
+        .citrusStylesSE-heroCopy p {
+            font-size: 16px;
+            padding-bottom: 10px;
+        }
+
+        .citrusStylesSE-video .citrusStyleSE-iframe {
+            height: 280px;
+        }
+    }
+
+    @media all and (max-width: 767px) {
+        .citrusStylesSE-heroImage-copy {
+            width: 100% !important;
+            margin: 0 auto !important;
+            justify-content: center;
+            align-items: flex-start;
+            height: 50%;
+        }
+
+        .citrusStylesSE-logo img {
+            max-width: 120px;
+        }
+
+        .citrusStylesSE-hero-copy-center {
+            gap: 0;
+            flex-direction: column;
+        }
+
+        .citrusStylesSE-heroCopy h1 {
+            font-size: calc(var(--citrusStylesSE-text-font-size-super) - 7px);
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .citrusStylesSE-heroCopy p {
+            font-size: 16px;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+
+        .citrusStylesSE-hero-rightCTA {
+            display: flex;
+            justify-content: center;
+        }
+
+        .citrusStylesSE-hero-rightCTA a {
+            width: max-content;
+            background: none;
+            line-height: 20px;
+            text-align: left;
+            color: var(--citrusStylesSE-primary-navy);
+            border: none;
+            text-decoration: underline;
+            text-transform: none;
+        }
+    }
+
+    @media all and (min-width: 476px) and (max-width: 767px) {
+        .citrusStylesSE-heroCopy h1 {
+            font-size: calc(var(--citrusStylesSE-text-font-size-super) + 4px);
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+        .citrusStylesSE-heroImage-copy {
+            top: 2%;
+        }
+
+        .citrusStylesSE-heroCopy h1 {
+            font-size: var(--citrusStylesSE-text-font-size-xlarge);
+            padding-bottom: 0px;
+        }
+    }
+
+    /* content banner video */
+    .citrusStylesSE-video {
+        background: #ffa40015;
+        position: relative;
+        margin: auto;
+        margin-top: 90px;
+        max-width: 1440px;
+    }
+
+    .citrusStyleSE-iframe {
+        width: 100%;
+        max-width: 550px;
+        height: 330px;
+        margin: auto;
+    }
+
+    .citrusStyleSE-iframe iframe {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: -30px;
+        border-radius: 6px;
+        border: 0;
+    }
+
+    .citrusStylesSE-grid-text {
+        text-align: center;
+        padding: 0 20px 20px;
+    }
+
+    @media screen and (max-width: 767px) {
+        .citrusStylesSE-video {
+            margin-top: 0px;
+        }
+
+        .citrusStylesSE-order2-sm {
+            order: 2;
+        }
+
+        .citrusStylesSE-order1-sm {
+            order: 1;
+        }
+
+        .citrusStylesSE-grid-text {
+            padding: 20px 20px 40px;
+        }
+
+        .citrusStylesSE-grid-text h2 {
+            padding: 20px 0 0;
+        }
+
+        .citrusStylesSE-grid-text p {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .citrusStyleSE-iframe iframe {
+            top: 0;
+        }
+    }
+
+    /* End content banner video */
+
+    /* article 3up */
+    .citrusStylesSE-section4up {
+        padding: var(--citrusStylesSE-spacing-super);
+    }
+
+    .citrusStylesSE-section4up .citrusStylesSE-grid__cell img {
+        max-width: 104px;
+    }
+
+    .citrusStylesSE-header4,
+    .citrusStylesSE-para {
+        color: var(--citrusStylesSE-black);
+    }
+
+    .citrusStylesSE-section4up .citrusStylesSE-para {
+        font-size: var(--citrusStylesSE-text-font-size-medium);
+        padding: 0 0 var(--citrusStylesSE-spacing-medium) 0;
+    }
+
+    .citrusStylesSE-section4up .citrusStylesSE-header4 {
+        padding: var(--citrusStylesSE-spacing-medium) 0;
+        font-size: var(--citrusStylesSE-text-font-size-large);
+    }
+
+    .citrusStylesSE-disclaimer.citrusStylesSE-para {
+        margin-top: -35px;
+    }
+
+    @media screen and (min-width: 48em) {
+        .citrusStylesSE-section4up .citrusStylesSE-btn-primary-navy .citrusStylesSE-url {
+            padding: var(--citrusStylesSE-spacing-large);
+        }
+    }
+
+    @media (min-width: 48em) and (max-width: 63.99em) {
+        .citrusStylesSE-disclaimer.citrusStylesSE-para {
+            margin-top: -65px;
+        }
+    }
+
+    @media (max-width: 47.93em) {
+        .citrusStylesSE-section4up {
+            padding: 0;
+        }
+
+        .citrusStylesSE-section4up .citrusStylesSE-header4 {
+            min-height: 50px;
+            padding-bottom: 0;
+        }
+
+        .citrusStylesSE-section4up .citrusStylesSE-grid__cell {
+            min-width: 70vw;
+        }
+
+        .citrusStylesSE-disclaimer.citrusStylesSE-para {
+            padding-top: 0;
+        }
+    }
+
+    /* End article 3up */
+</style>
+<main class="citrusStylesSE-container">
+    <!-- hero pov -->
+    <section class="citrusStylesSE-container">
+        <!-- full width image -->
+        <img class="citrusStylesSE-img citrusStylesSE-m-hide"
+            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHardBall-hero-desktop"
+            alt="A cat next to a pack shot of Hardball litter.">
+        <img class="citrusStylesSE-img citrusStylesSE-d-hide"
+            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHardBall-hero-mobile"
+            alt="A cat next to a pack shot of Hardball litter.">
+        <!-- ./End full width image -->
+        <!-- hero copy container -->
+        <div class="citrusStylesSE-heroImage-copy">
+            <div class="citrusStylesSE-hero-copy-center">
+                <div class="citrusStylesSE-logo">
+                    <img class="citrusStylesSE-img"
+                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHardBall-Logo"
+                        alt="Arm and Hammer logo. Hardball logo. Easy, no-mess scooping. Clumping litter.">
+                </div>
+                <div class="citrusStylesSE-heroCopy">
+                    <h1 class="citrusStylesSE-header1">LIGHTWEIGHT <br class="citrusStylesSE-m-hide">LITTER, <br
+                            class="citrusStylesSE-d-hide">PERFECTED</h1>
+                    <p class="citrusStylesSE-para citrusStylesSE-PetcoMedium">Quick-forming, ultra-compact
+                        clumps<br> shrink waste and odors
+                        for
+                        easy cleanup.</p>
+                    <div class="citrusStylesSE-hero-rightCTA">
+                        <a class="citrusStylesSE-url"
+                            href="https://www.petco.com/shop/en/petcostore/product/arm-and-hammer-hardball-no-mess-scooping-clumping-lightweight-multi-cat-litter"
+                            manual_cm_sp="sponsoredbrandpage:hardball:heropov:1:lightweightlitterperfected:shopnow">Shop
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End hero pov -->
+
+    <!-- content banner video -->
+    <section class="citrusStylesSE-container--large citrusStylesSE-container--super citrusStylesSE-video banner">
+        <div
+            class="citrusStylesSE-grid citrusStylesSE-grid--small-full citrusStylesSE-grid--medium-full citrusStylesSE-grid--no-gutter">
+            <div class="citrusStylesSE-grid__cell citrusStylesSE-order2-sm">
+                <div class="citrusStyleSE-iframe">
+                    <iframe src="https://www.youtube.com/embed/S3AnTdas5qo" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen=""
+                        manual_sm_sp="sponsoredbrandpage:hardball:contentbanner:1:virtuallyindestructibleclumps:video"></iframe>
+                </div>
+            </div>
+            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--center citrusStylesSE-order1-sm">
+                <div class="citrusStylesSE-grid-text">
+                    <h2 class="citrusStylesSE-heading citrusStylesSE-centered citrusStylesSE-PetcoBold">Virtually
+                        indestructible clumps</h2>
+                    <p class="citrusStylesSE-centered citrusStyleSE-paragraph citrusStylesSE-PetcoRegular">See these
+                        ultra-compact, odor-shrinking wonders in action.</p>
+                    <div class="citrusStylesSE-btn-primary-navy citrusStylesSE-grid citrusStylesSE-grid--center">
+                        <a href="https://www.petco.com/shop/en/petcostore/product/arm-and-hammer-hardball-no-mess-scooping-clumping-lightweight-multi-cat-litter"
+                            manual_cm_sp="sponsoredbrandpage:hardball:contentbanner:2:virtuallyindestructibleclumps:shopnow"
+                            class="citrusStylesSE-url">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End content banner video -->
+
+    <!-- article 3up  -->
+    <section class="citrusStylesSE-section4up">
+        <div class="citrusStylesSE-section__title citrusStylesSE-centered">
+            <h2 class="citrusStylesSE-header2">Hard facts about HardBall</h2>
+        </div>
+        <div
+            class="citrusStylesSE-grid citrusStylesSE-no-scrollbar citrusStylesSE-no-scrollbar citrusStylesSE-overflow-x">
+            <div
+                class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--no-gutter citrusStylesSE-centered citrusStylesSE-grid__cell--width-33@large citrusStylesSE-grid__cell--width-50@medium citrusStylesSE-grid__cell--width-70@xsmall">
+                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHardBall-article3up01"
+                    alt="Three arrows pointing at a clump of litter.">
+                <h4 class="citrusStylesSE-header4">Crazy hard clumps</h4>
+                <p class="citrusStylesSE-para">Make litter box cleanup a breeze.</p>
+            </div>
+            <div
+                class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--no-gutter citrusStylesSE-centered citrusStylesSE-grid__cell--width-33@large citrusStylesSE-grid__cell--width-50@medium citrusStylesSE-grid__cell--width-70@xsmall">
+                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHardBall-article3up02"
+                    alt="Scoop it, don’t change it shield. Freshness guaranteed. Up to 20 days.">
+                <h4 class="citrusStylesSE-header4">Hardworking and long lasting</h4>
+                <p class="citrusStylesSE-para">Up to 20 days of freshness.</p>
+            </div>
+            <div
+                class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--no-gutter citrusStylesSE-centered citrusStylesSE-grid__cell--width-33@large citrusStylesSE-grid__cell--width-50@medium citrusStylesSE-grid__cell--width-70@xsmall">
+                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHardBall-article3up03"
+                    alt="A pet parent kissing her cat’s head.">
+                <h4 class="citrusStylesSE-header4">Innovative, lightweight formula</h4>
+                <p class="citrusStylesSE-para">Nearly 60% lighter.*</p>
+            </div>
+        </div>
+
+        <div
+            class="citrusStylesSE-btn-primary-navy citrusStylesSE-grid citrusStylesSE-grid--center citrusStylesSE-centered citrusStylesSE-letter-box-super">
+            <a class="citrusStylesSE-url"
+                href="https://www.petco.com/shop/en/petcostore/product/arm-and-hammer-hardball-no-mess-scooping-clumping-lightweight-multi-cat-litter"
+                manual_cm_sp="sponsoredbrandpage:hardball:article3up:1:hardfactsabouthardball:shophardball">Shop
+                HardBall</a>
+        </div>
+        <p class="citrusStylesSE-para citrusStylesSE-disclaimer citrusStylesSE-centered">*Vs. our regular clay
+            litter.</p>
+    </section>
+    <!-- End article 3up -->
+</main>
